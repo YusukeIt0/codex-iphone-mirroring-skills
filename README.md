@@ -7,12 +7,15 @@ The skill needs an existing desktop-control tool with macOS app access, screensh
 ## Contents
 
 - [`iphone-mirroring`](skills/iphone-mirroring/SKILL.md): shared operating workflow.
-- Tool and app references are loaded only when relevant.
+- [`even-app-operations`](skills/even-app-operations/SKILL.md): the integrated Even operating skill, including installed/developer/prototype routes, stop/reopen, updates, text entry and physical acceptance.
+- Tool and input references are loaded only when relevant.
 - [`Validation`](docs/validation.md): observed environments, practical checks and remaining limitations.
 
 ## Install and use
 
-Copy `skills/iphone-mirroring` into the skill directory supported by your agent. For Codex, a supported user-level location is `~/.agents/skills/iphone-mirroring`; repository-local skills can go in `.agents/skills/`.
+Copy both `skills/iphone-mirroring` and `skills/even-app-operations` into the same skill directory supported by your agent. Keep their folder names: relative links connect the shared workflow and the Even procedures. For Codex, a supported user-level location is `~/.agents/skills/iphone-mirroring`; repository-local skills can go in `.agents/skills/`.
+
+For Even tasks, invoke `$even-app-operations`; it loads the shared Mirroring guidance as needed. The integrated Even skill replaces an older installation of the same name when you choose to install this repository.
 
 Example request:
 

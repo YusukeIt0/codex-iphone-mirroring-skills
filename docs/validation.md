@@ -37,8 +37,12 @@ The synthetic Mac scratch document was moved from TextEdit iCloud storage into t
 
 ## Earlier Even route evidence
 
-The accompanying Even reference also carries forward observations from 2026-10-24: formal installed-app Home route, My plugins to Developer hub, lower uploaded-app row versus QR prototype route, and top-left stop confirmation returning to the originating list. Developer update refresh by leaving and re-entering the hub was user-confirmed, not an update executed during this test. These observations are dated guidance and must be checked against live labels.
+The integrated `even-app-operations` skill also carries forward observations from 2026-10-24: formal installed-app Home route, My plugins to Developer hub, lower uploaded-app row versus QR prototype route, and top-left stop confirmation returning to the originating list. Developer update refresh by leaving and re-entering the hub was user-confirmed, not an update executed during this test. These observations are dated guidance and must be checked against live labels.
 
 ## Revalidation
 
 On another environment, record OS/app/tool versions, starting route, exact action, visible final state, repeatability and cleanup. Test neutral search input before a message draft. Never send just to prove that input worked. Keep failures in the record and avoid promoting a one-device result to a universal guarantee.
+
+## Integration review — 2026-10-25
+
+The existing Even operations skill was integrated as a second skill in this repository. Installed-app, developer-hub, prototype, stop/reopen, update, input and acceptance sections were checked against the source. Historical version examples remain dated; newer observations qualify shortcuts, delayed clicks and build identity. The shared input policy replaces repeated keyboard troubleshooting with a narrow user handoff. Dot Link distribution requirements remain explicitly project-specific. No new device update, message send or release action was performed for this documentation integration.
