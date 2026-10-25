@@ -1,0 +1,4 @@
+interface:
+  display_name: "iPhone Mirroring"
+  short_description: "Operate mirrored iPhone apps with verified UI steps"
+  default_prompt: "Use $iphone-mirroring to operate the requested iPhone app through macOS iPhone Mirroring and verify the visible result."
