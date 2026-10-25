@@ -67,3 +67,7 @@ Scope expanded from a single plugin's routes to the in-app storefront and manage
 No other plugin was installed, removed or updated; no message, share or reaction was sent. No personal account details or screenshots are included in this record.
 
 After the Hub inspection, the original uploaded-developer route was reopened. Dot Link 0.3.36, Even Hub connected status and the pre-existing transcript were visibly restored. Search was left empty before exiting.
+
+## Active-skill synchronization — 2026-10-25
+
+The repository Even skill now matches the extended active local `even-app-operations/SKILL.md` byte for byte. It contains its own navigation, Hub management, input fallback and limitations, with no dependency on the generic skill. The earlier separate Hub reference was consolidated into this file. The generic Mirroring skill remains available separately. Future improvements can be tested in the active skill and copied back here; synchronization is manual, not automatic.

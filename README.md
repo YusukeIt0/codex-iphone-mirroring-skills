@@ -1,35 +1,67 @@
-# iPhone Mirroring skill
+# iPhone Mirroring & Even Hub skills
 
-Reusable agent instructions for operating iPhone apps through Apple's iPhone Mirroring on a Mac, checking the result, and recovering from ambiguous input.
+Agent skills for controlling iPhone apps and Even Hub from a Mac through Apple’s iPhone Mirroring.
 
-The skill needs an existing desktop-control tool with macOS app access, screenshots, pointer input and keyboard input. Installing this repository does not supply those capabilities or grant device access.
+## How it works
 
-## Contents
+1. **Mirror your iPhone on your Mac** using Apple’s iPhone Mirroring app.
+2. **Give your AI agent a task.** Its desktop-control tool clicks, scrolls and types in the mirrored window.
+3. **The skill guides the agent** through known routes, checks the visible result and handles failed input.
 
-- [`iphone-mirroring`](skills/iphone-mirroring/SKILL.md): shared operating workflow.
-- [`even-app-operations`](skills/even-app-operations/SKILL.md): the integrated Even operating skill, including installed/developer/prototype routes, stop/reopen, updates, text entry and physical acceptance.
-- Tool and input references are loaded only when relevant.
-- [`Validation`](docs/validation.md): observed environments, practical checks and remaining limitations.
+## Included skills
 
-## Install and use
+| Skill | Use it for |
+| --- | --- |
+| [iphone-mirroring](skills/iphone-mirroring/SKILL.md) | General navigation, scrolling, text entry and screen verification |
+| [even-app-operations](skills/even-app-operations/SKILL.md) | Even Hub browsing, plugin management, developer builds, update checks, stop/reopen and device verification |
 
-Copy both `skills/iphone-mirroring` and `skills/even-app-operations` into the same skill directory supported by your agent. Keep their folder names: relative links connect the shared workflow and the Even procedures. For Codex, a supported user-level location is `~/.agents/skills/iphone-mirroring`; repository-local skills can go in `.agents/skills/`.
+The Even skill is self-contained and can be installed on its own. It includes the procedures used in the maintainer’s local workflow.
 
-For Even tasks, invoke `$even-app-operations`; it loads the shared Mirroring guidance as needed. The integrated Even skill replaces an older installation of the same name when you choose to install this repository.
+## Requirements
 
-Example request:
+- A Mac and iPhone with [Apple’s iPhone Mirroring](https://support.apple.com/en-us/120421) working.
+- An AI agent with a desktop-control tool that can inspect and operate Mac apps.
+- For Even tasks: the Even iPhone app and access to the relevant plugin/build.
 
-> Use $iphone-mirroring to open the requested iPhone app, perform the agreed task, and verify the result on screen.
+**Tested tool:** Codex native Computer Use (`cua_repl`). These files provide instructions; they do not install a control tool or grant device access.
 
-The first tested tool environment is Codex with native Computer Use through `cua_repl`. Compatibility with another tool requires adapting its documented calls and testing them. Do not assume a CLI-only installation has desktop control.
+## Install
 
-## Contribute an observation
+Copy the desired folder from `skills/` into your agent’s skill directory.
 
-Include the OS/app/tool versions, starting screen, exact action, visible result, repeatability, and how the original state was restored. Use synthetic text and omit personal or account information. A useful failure report distinguishes an unchanged screen from a rejected tool call or an inactive mirroring session.
+| Scope | Codex location |
+| --- | --- |
+| Your user account | `~/.agents/skills/` |
+| One repository | `.agents/skills/` |
 
-## Sources
+Update an existing skill of the same name instead of keeping duplicate installations. See [Codex skill setup](https://learn.chatgpt.com/docs/build-skills#where-codex-loads-local-skills).
 
-- [Apple: iPhone Mirroring](https://support.apple.com/en-us/120421)
-- [OpenAI: Skills](https://learn.chatgpt.com/docs/customization/overview#skills)
+## Example tasks
 
-Not affiliated with Apple or OpenAI. Apple and OpenAI product names identify the environments used.
+> Use $iphone-mirroring to open the requested iPhone app and inspect its screen.
+
+> Use $even-app-operations to check whether my uploaded developer plugin has an update. Do not install it yet.
+
+## Input fallback
+
+**Copy and paste → verify the text → ask for manual entry if needed → resume.**
+
+If manual entry also fails, use a route that needs no text or report the step as unverified. Sending and submitting remain separate actions.
+
+## Known limits
+
+| Area | Current status |
+| --- | --- |
+| Even navigation, ranking tabs and category sorting | Observed working |
+| Plugin removal | Observed working with explicit authorization |
+| Developer update refresh | User-confirmed route; no pending update was installed during validation |
+| Cross-device paste and search input | Unreliable in the tested environment |
+| Some detail-page scrolling and image gestures | Not established |
+
+See [validation evidence](docs/validation.md) for dates, versions and remaining gaps.
+
+## Improve the skills
+
+Record the starting screen, versions, action, visible result and cleanup. Keep confirmed behavior separate from assumptions. Include no private screenshots, account details or conversations.
+
+Not affiliated with Apple, OpenAI or Even Realities.
