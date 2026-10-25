@@ -36,3 +36,5 @@ The Popular and New tiles open a shared Ranking page with Popular/New tabs. Both
 In a G2Loo detail page, two native vertical-scroll attempts did not move the visible content. A horizontal image drag and an image tap also did not establish gallery navigation or enlargement. Back navigation still worked. Do not assume an entire page is frozen or claim these gestures are verified. Stop repeated attempts and use a narrow user handoff when the hidden content is needed.
 
 Even Hub search displayed an iOS cross-device paste-permission prompt. Confirm the intended source and current task before allowing a prepared non-sensitive string. The observed transfer nevertheless inserted an old clipboard string instead of the copied query; it was cleared using the search field's X. Follow the one-attempt input fallback and ask the user for the query rather than continuing to paste blindly.
+
+The user also reported being unable to enter the intended query manually in this session. The exact cause was not established. Search by entered text therefore remains unverified; category navigation and My plugins remain usable alternatives for their respective tasks.

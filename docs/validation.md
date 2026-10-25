@@ -62,6 +62,8 @@ Scope expanded from a single plugin's routes to the in-app storefront and manage
 | Store detail ellipsis | Inspected | Live translation and Share; neither executed |
 | Detail scrolling/gallery | Not established | Two vertical scrolls, one horizontal drag and an image tap showed no confirmed change |
 | Uninstall | Passed | Explicitly designated OcuClaw was uninstalled after confirmation of irreversible related-data loss; store changed to Get; My plugins required exit/reentry before its row disappeared |
-| Search paste | Failed | Prepared Mac query differed from pasted old clipboard text even after an iOS paste prompt; field cleared and user asked for text entry |
+| Search paste | Failed | Prepared Mac query differed from pasted old clipboard text even after an iOS paste prompt; field cleared; user-assisted entry also failed by user report. Search results for the intended query remain unverified |
 
 No other plugin was installed, removed or updated; no message, share or reaction was sent. No personal account details or screenshots are included in this record.
+
+After the Hub inspection, the original uploaded-developer route was reopened. Dot Link 0.3.36, Even Hub connected status and the pre-existing transcript were visibly restored. Search was left empty before exiting.
