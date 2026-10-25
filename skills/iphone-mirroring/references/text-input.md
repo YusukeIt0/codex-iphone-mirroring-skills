@@ -12,7 +12,7 @@ Prefer copying a complete, committed string on the Mac, pasting it into the iPho
 6. If the exact text does not appear after focus and any paste indicator settle, stop automated input and ask the user to enter only the required string in the already-open field. Do not ask them to send it. Inspect their completed input, then resume the remaining authorized work. Do not cycle through alternate key combinations, paste wrappers or repeated retries. Clear only synthetic text from the failed attempt; preserve user content.
 7. Clear synthetic drafts and remove or retain the scratch artifact according to the user's task. Report any remaining artifact or clipboard change.
 
-Two mixed-script strings pasted correctly into Settings search using this procedure. This is bounded evidence, not a guarantee for every app. A Spotlight attempt showed a paste indicator without confirmed text afterward. See the repository validation record for app-specific checks.
+Two mixed-script strings pasted correctly into Settings search using this procedure. This is bounded evidence, not a guarantee for every app. A Spotlight attempt showed a paste indicator without confirmed text afterward. In a later Even Hub search test, ordinary Mac copy followed by Command-V also produced an old clipboard string, after a paste-permission prompt. This procedure therefore reduces one suspected timing issue but does not guarantee correct cross-device transfer. See the repository validation record for app-specific checks.
 
 ## Why not the one-call paste wrapper?
 

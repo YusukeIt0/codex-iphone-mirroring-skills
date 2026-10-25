@@ -9,6 +9,8 @@ Integrated from the existing Even operations skill, with observations from 2026-
 
 Use cua_repl for UI interaction. Treat the following as observations from 2026-10-24, and refresh the screenshot before choosing controls.
 
+For storefront browsing, search/category navigation, My plugins and uninstall, read [Even Hub management](references/even-hub.md).
+
 ## Open the installed app
 
 - Bind iPhone Mirroring with `cua.getApp('com.apple.ScreenContinuity')`. Its AX tree may expose only the Mac window and menus. Use current screenshots for the phone's controls; do not expect app-internal AX elements.

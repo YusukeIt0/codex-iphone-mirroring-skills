@@ -46,3 +46,22 @@ On another environment, record OS/app/tool versions, starting route, exact actio
 ## Integration review — 2026-10-25
 
 The existing Even operations skill was integrated as a second skill in this repository. Installed-app, developer-hub, prototype, stop/reopen, update, input and acceptance sections were checked against the source. Historical version examples remain dated; newer observations qualify shortcuts, delayed clicks and build identity. The shared input policy replaces repeated keyboard troubleshooting with a narrow user handoff. Dot Link distribution requirements remain explicitly project-specific. No new device update, message send or release action was performed for this documentation integration.
+
+## Even Hub inspection — 2026-10-25
+
+Scope expanded from a single plugin's routes to the in-app storefront and management surfaces. The running plugin was stopped to inspect the Hub.
+
+| Check | Result | Boundary |
+| --- | --- | --- |
+| Storefront and discovery | Passed | Featured area, search entry, categories and ranking entry points observed |
+| AI category | Passed | Featured area and plugin list loaded |
+| Category sorting | Passed | Latest changed the list after loading; Automatic was selected again afterward |
+| Popular/New ranking | Passed | Switching tabs displayed distinct lists |
+| My plugins sort menu | Inspected | Updates available, Size and Name; reordering not exercised with one remaining item |
+| Store details | Passed for opening | Developer, category, rank, images, overview and Get/Open visible |
+| Store detail ellipsis | Inspected | Live translation and Share; neither executed |
+| Detail scrolling/gallery | Not established | Two vertical scrolls, one horizontal drag and an image tap showed no confirmed change |
+| Uninstall | Passed | Explicitly designated OcuClaw was uninstalled after confirmation of irreversible related-data loss; store changed to Get; My plugins required exit/reentry before its row disappeared |
+| Search paste | Failed | Prepared Mac query differed from pasted old clipboard text even after an iOS paste prompt; field cleared and user asked for text entry |
+
+No other plugin was installed, removed or updated; no message, share or reaction was sent. No personal account details or screenshots are included in this record.
