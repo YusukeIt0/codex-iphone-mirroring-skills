@@ -1,11 +1,13 @@
-# iPhone Mirroring & Even Hub skills
+# Codex skills for iPhone Mirroring & Even Hub
 
-Agent skills for controlling iPhone apps and Even Hub from a Mac through Apple’s iPhone Mirroring.
+Skills for **OpenAI Codex** to control iPhone apps and Even Hub from a Mac through Apple’s iPhone Mirroring.
+
+**Target environment: Codex with native Computer Use (`cua_repl`). Claude, Claude Code and other agents are not supported or tested by this project; these instructions are not a drop-in setup for them.**
 
 ## How it works
 
 1. **Mirror your iPhone on your Mac** using Apple’s iPhone Mirroring app.
-2. **Give your AI agent a task.** Its desktop-control tool clicks, scrolls and types in the mirrored window.
+2. **Give Codex a task.** Its desktop-control tool clicks, scrolls and types in the mirrored window.
 3. **The skill guides the agent** through known routes, checks the visible result and handles failed input.
 
 ## Included skills
@@ -20,14 +22,14 @@ The Even skill is self-contained and can be installed on its own. It includes th
 ## Requirements
 
 - A Mac and iPhone with [Apple’s iPhone Mirroring](https://support.apple.com/en-us/120421) working.
-- An AI agent with a desktop-control tool that can inspect and operate Mac apps.
+- Codex with native Computer Use (`cua_repl`) available for Mac apps. A CLI-only setup without desktop control is not sufficient.
 - For Even tasks: the Even iPhone app and access to the relevant plugin/build.
 
 **Tested tool:** Codex native Computer Use (`cua_repl`). These files provide instructions; they do not install a control tool or grant device access.
 
 ## Install
 
-Copy the desired folder from `skills/` into your agent’s skill directory.
+Download or clone this repository, then copy the desired folder from `skills/` into your Codex skill directory.
 
 | Scope | Codex location |
 | --- | --- |
@@ -59,6 +61,10 @@ If manual entry also fails, use a route that needs no text or report the step as
 | Some detail-page scrolling and image gestures | Not established |
 
 See [validation evidence](docs/validation.md) for dates, versions and remaining gaps.
+
+## License
+
+[MIT](LICENSE) — reuse, modify and redistribute with the license notice.
 
 ## Improve the skills
 

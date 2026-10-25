@@ -4,7 +4,7 @@
 
 Observed on 2026-10-25 using macOS 26.2 (25C56), iPhone Mirroring 1.5 and Codex native Computer Use through `cua_repl`. The iOS version was not independently recorded. Earlier Even navigation observations used Even 2.3.2; the current installed Even version was not rechecked. Dot Link displayed 0.3.36 through the uploaded developer-app route, without a Beta marker. Route alone does not determine build identity.
 
-Tests used synthetic text and reversible navigation. No test message was sent. No keyboard remapping, app binary, system program, permission or installed package was changed. Private screenshots are not included in this repository.
+Tests used synthetic text and reversible navigation. No test message was sent. The initial input tests changed no keyboard remapping, app binary, system program or installed package. The later Hub inspection below includes an explicitly authorized uninstall and a paste-permission prompt. Private screenshots are not included in this repository.
 
 ## Results
 
@@ -71,3 +71,7 @@ After the Hub inspection, the original uploaded-developer route was reopened. Do
 ## Active-skill synchronization — 2026-10-25
 
 The repository Even skill now matches the extended active local `even-app-operations/SKILL.md` byte for byte. It contains its own navigation, Hub management, input fallback and limitations, with no dependency on the generic skill. The earlier separate Hub reference was consolidated into this file. The generic Mirroring skill remains available separately. Future improvements can be tested in the active skill and copied back here; synchronization is manual, not automatic.
+
+## Public package preparation — 2026-10-25
+
+Codex native Computer Use is the supported target; other agent runtimes are untested. MIT licensing and runtime notes were added after the active-skill synchronization. Private runtime artifacts are excluded, and public commit identity uses a GitHub noreply address.

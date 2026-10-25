@@ -1,9 +1,12 @@
 ---
 name: iphone-mirroring
 description: Operate iPhone apps through macOS iPhone Mirroring using an available desktop-control tool, including navigation, text entry, scrolling and result verification. Use for mirrored iPhone UI tasks, not AirPlay viewing, iOS simulators or remote Mac screen sharing.
+license: MIT
 ---
 
 # iPhone Mirroring
+
+Target runtime: OpenAI Codex with native Computer Use (`cua_repl`) on macOS. Claude, Claude Code and other agent runtimes have not been tested or adapted. Follow the current Codex tool documentation; do not invent equivalent APIs in another runtime.
 
 Use the agent's available desktop-control capability. This skill supplies operating knowledge, not a driver or new device permissions. If no suitable tool is available, explain the missing capability instead of inventing commands.
 
@@ -11,7 +14,7 @@ Use the agent's available desktop-control capability. This skill supplies operat
 
 - With native `cua_repl` / Computer Use, read [the tool procedure](references/cua.md). Follow the tool's current documentation when it differs from an example here.
 - For text entry, especially Japanese, mixed scripts or stale paste results, read [text input](references/text-input.md).
-- For the Even iPhone app, read [the Even operations skill](../even-app-operations/SKILL.md). The separate Developer Hub website is a browser task.
+- For the Even iPhone app, use the companion `even-app-operations` skill when installed. Both skills are supplied in this repository; install the Even skill before using its app-specific procedures. The separate Developer Hub website is a browser task.
 
 ## Operate from observed state
 

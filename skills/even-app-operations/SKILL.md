@@ -1,9 +1,12 @@
 ---
 name: even-app-operations
 description: Required whenever operating the Even iPhone app or its Even Hub through macOS iPhone Mirroring. Covers storefront browsing, plugin management, formal and developer Dot Link, stopping, updating, text input, and physical acceptance. Not for the separate Even Developer Hub website.
+license: MIT
 ---
 
 # Even app operations
+
+Target runtime: OpenAI Codex with native Computer Use (`cua_repl`) on macOS. Claude, Claude Code and other agent runtimes have not been tested or adapted. Follow the current Codex tool documentation; do not invent equivalent APIs in another runtime.
 
 Maintainer requirement (2026-10-24): read and apply this skill before operating Even or Even Hub through iPhone Mirroring. If already read in the current session, continue applying it rather than rediscovering the routes.
 
